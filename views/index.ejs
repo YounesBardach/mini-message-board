@@ -1,0 +1,11 @@
+<ul>
+  <% messages.forEach((message, index) => { %>
+  <li>
+    <p><%= message.user %></p>
+    <p><%= message.text %></p>
+    <p><%= message.added %></p>
+    <a href="/details/<%= index %>">See Message Details</a>
+  </li>
+  <% }) %>
+</ul>
+<a href="/new">Send a Message!</a>
